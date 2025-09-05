@@ -1,36 +1,237 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Restaurant Menu</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background-color: #f8f8f8; }
-    h1 { text-align: center; color: #333; }
-    .section { margin-bottom: 30px; }
-    .section h2 { color: #444; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
-    .item { margin: 10px 0; font-size: 18px; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AJJ Restaurant Menu</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome to Abhinav's Bistro</h1>
-  <div class="section">
-    <h2>Starters</h2>
-    <div class="item">Paneer Tikka - ₹250</div>
-    <div class="item">Spring Rolls - ₹200</div>
-    <div class="item">Tomato Soup - ₹150</div>
-  </div>
-  <div class="section">
-    <h2>Main Course</h2>
-    <div class="item">Butter Chicken - ₹350</div>
-    <div class="item">Dal Makhani - ₹300</div>
-    <div class="item">Veg Biryani - ₹280</div>
-  </div>
-  <div class="section">
-    <h2>Desserts</h2>
-    <div class="item">Gulab Jamun - ₹120</div>
-    <div class="item">Ice Cream - ₹100</div>
-    <div class="item">Rasmalai - ₹130</div>
-  </div>
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="AJJ Logo">
+      <h1>AJJ Restaurant</h1>
+    </div>
+    <p class="contact">📞 9516640605 | 7772061605</p>
+  </header>
+
+  <main>
+    <!-- Breakfast -->
+    <section class="menu-category">
+      <h2>🥞 Breakfast</h2>
+      <ul>
+        <li><span>Plain Paratha</span><span>₹30</span></li>
+        <li><span>Aaloo Paratha</span><span>₹40</span></li>
+        <li><span>Onion Paratha</span><span>₹40</span></li>
+        <li><span>Gobhi Paratha</span><span>₹50</span></li>
+        <li><span>Paneer Paratha</span><span>₹70</span></li>
+        <li><span>Mooli Paratha</span><span>₹50</span></li>
+        <li><span>Dahi</span><span>₹20</span></li>
+        <li><span>Poori Bhaji</span><span>₹90</span></li>
+        <li><span>Choley Bhaturey</span><span>₹120</span></li>
+        <li><span>Plain Poha</span><span>₹70</span></li>
+        <li><span>Masala Poha</span><span>₹80</span></li>
+        <li><span>Butter Toast</span><span>₹50</span></li>
+        <li><span>Plain Omelette</span><span>₹50</span></li>
+        <li><span>Masala Omelette</span><span>₹70</span></li>
+        <li><span>Boiled Egg</span><span>₹40</span></li>
+        <li><span>Egg Poach</span><span>₹60</span></li>
+        <li><span>Bread Omelette</span><span>₹90</span></li>
+        <li><span>Plain Maggi</span><span>₹60</span></li>
+        <li><span>Masala Maggi</span><span>₹70</span></li>
+      </ul>
+    </section>
+
+    <!-- Hot & Cold -->
+    <section class="menu-category">
+      <h2>☕ Hot & Cold</h2>
+      <ul>
+        <li><span>Tea</span><span>₹20</span></li>
+        <li><span>Coffee</span><span>₹30</span></li>
+        <li><span>Hot Milk</span><span>₹40</span></li>
+        <li><span>Butter Milk</span><span>₹40</span></li>
+        <li><span>Cold Drink 250ml</span><span>₹35</span></li>
+        <li><span>Cold Drink 500ml</span><span>₹50</span></li>
+        <li><span>Masala Cold Drink</span><span>₹50</span></li>
+        <li><span>Cold Coffee</span><span>₹50</span></li>
+        <li><span>Cold Coffee w/ Ice Cream</span><span>₹70</span></li>
+        <li><span>Lassi</span><span>₹40</span></li>
+        <li><span>Special Lassi</span><span>₹60</span></li>
+        <li><span>Jaljeera</span><span>₹40</span></li>
+        <li><span>Fresh Lime Water</span><span>₹30</span></li>
+        <li><span>Fresh Lime Soda</span><span>₹40</span></li>
+      </ul>
+    </section>
+
+    <!-- Fresh Salad -->
+    <section class="menu-category">
+      <h2>🥗 Fresh Salad</h2>
+      <ul>
+        <li><span>Green Salad</span><span>₹70</span></li>
+        <li><span>Onion Salad</span><span>₹40</span></li>
+        <li><span>Cream Salad</span><span>₹90</span></li>
+        <li><span>Kachuber Salad</span><span>₹80</span></li>
+        <li><span>Family Salad</span><span>₹100</span></li>
+      </ul>
+    </section>
+
+    <!-- Papads -->
+    <section class="menu-category">
+      <h2>🥨 Papads</h2>
+      <ul>
+        <li><span>Dry Papad</span><span>₹15</span></li>
+        <li><span>Fry Papad</span><span>₹20</span></li>
+        <li><span>Masala Papad</span><span>₹40</span></li>
+      </ul>
+    </section>
+
+    <!-- Raita -->
+    <section class="menu-category">
+      <h2>🥛 Raita</h2>
+      <ul>
+        <li><span>Plain Raita</span><span>₹50</span></li>
+        <li><span>Mix Veg Raita</span><span>₹80</span></li>
+        <li><span>Pudina Raita</span><span>₹90</span></li>
+        <li><span>Boondi Raita</span><span>₹80</span></li>
+        <li><span>Pineapple Raita</span><span>₹120</span></li>
+      </ul>
+    </section>
+
+    <!-- Snacks -->
+    <section class="menu-category">
+      <h2>🍟 Jhat-Pat Snacks</h2>
+      <ul>
+        <li><span>Finger Chips</span><span>₹110</span></li>
+        <li><span>Peanut Fry</span><span>₹80</span></li>
+        <li><span>Chana Roast</span><span>₹120</span></li>
+        <li><span>Peanut Masala</span><span>₹110</span></li>
+        <li><span>Veg Pakora</span><span>₹110</span></li>
+        <li><span>Paneer Pakora</span><span>₹190</span></li>
+        <li><span>Egg Pakora</span><span>₹140</span></li>
+      </ul>
+    </section>
+
+    <!-- Soups -->
+    <section class="menu-category">
+      <h2>🍵 Soups</h2>
+      <ul>
+        <li><span>Veg Manchow Soup</span><span>₹110</span></li>
+        <li><span>Tomato Soup</span><span>₹120</span></li>
+        <li><span>Veg Hot & Sour Soup</span><span>₹110</span></li>
+        <li><span>Veg Sweet Corn Soup</span><span>₹120</span></li>
+        <li><span>Lemon Coriander Soup</span><span>₹110</span></li>
+      </ul>
+      <h3>🍗 Non-Veg Soups</h3>
+      <ul>
+        <li><span>Chicken Manchow Soup</span><span>₹140</span></li>
+        <li><span>Chicken Clear Soup</span><span>₹130</span></li>
+        <li><span>Chicken Hot & Sour Soup</span><span>₹140</span></li>
+        <li><span>Chicken Sweet Corn Soup</span><span>₹140</span></li>
+      </ul>
+    </section>
+
+    <!-- Chinese Veg Starter -->
+    <section class="menu-category">
+      <h2>🥬 Chinese Veg Starters</h2>
+      <ul>
+        <li><span>Paneer Chilli</span><span>₹220</span></li>
+        <li><span>Paneer Garlic</span><span>₹230</span></li>
+        <li><span>Lemon Paneer</span><span>₹240</span></li>
+        <li><span>Veg Manchurian</span><span>₹180</span></li>
+        <li><span>Veg Lollipop</span><span>₹240</span></li>
+        <li><span>Chana Chilli</span><span>₹150</span></li>
+        <li><span>Soya Chilli</span><span>₹120</span></li>
+        <li><span>Mushroom Chilli</span><span>₹190</span></li>
+        <li><span>Lemon Mushroom</span><span>₹200</span></li>
+        <li><span>Crispy Babycorn</span><span>₹220</span></li>
+        <li><span>Crispy Corn</span><span>₹190</span></li>
+        <li><span>Honey Chilli Potato</span><span>₹170</span></li>
+        <li><span>Veg Spring Roll</span><span>₹170</span></li>
+        <li><span>Chinese Spring Roll</span><span>₹190</span></li>
+        <li><span>Nutty Balls</span><span>₹240</span></li>
+        <li><span>Crispy Corn Chilli</span><span>₹220</span></li>
+        <li><span>Paneer 65</span><span>₹230</span></li>
+      </ul>
+    </section>
+
+    <!-- Chinese Non-Veg Starter -->
+    <section class="menu-category">
+      <h2>🍗 Chinese Non-Veg Starters</h2>
+      <ul>
+        <li><span>Chicken Chilli (Bone)</span><span>₹220</span></li>
+        <li><span>Chicken Chilli (Boneless)</span><span>₹250</span></li>
+        <li><span>Chicken Garlic Boneless</span><span>₹270</span></li>
+        <li><span>Chicken Salt & Pepper</span><span>₹290</span></li>
+        <li><span>Chicken Lollipop (6 pcs)</span><span>₹320</span></li>
+        <li><span>Chicken Spring Roll</span><span>₹200</span></li>
+        <li><span>Chicken Crispy Boneless</span><span>₹260</span></li>
+        <li><span>Chicken Manchurian</span><span>₹260</span></li>
+        <li><span>Lemon Chicken</span><span>₹280</span></li>
+        <li><span>Chicken Honey Chilli</span><span>₹260</span></li>
+        <li><span>Chicken Roast</span><span>₹350</span></li>
+        <li><span>Chicken 65</span><span>₹280</span></li>
+      </ul>
+    </section>
+
+    <!-- Veg Rice/Noodles -->
+    <section class="menu-category">
+      <h2>🍜 Veg Rice & Noodles</h2>
+      <ul>
+        <li><span>Veg Hakka Noodle</span><span>₹160</span></li>
+        <li><span>Veg Schezwan Noodle</span><span>₹170</span></li>
+        <li><span>Veg Singapoori Noodle</span><span>₹170</span></li>
+        <li><span>Veg Mushroom Noodle</span><span>₹180</span></li>
+        <li><span>Veg American Corn Noodle</span><span>₹190</span></li>
+        <li><span>Veg Fried Rice</span><span>₹160</span></li>
+        <li><span>Veg Schezwan Fried Rice</span><span>₹170</span></li>
+        <li><span>Paneer Fried Rice</span><span>₹190</span></li>
+        <li><span>Veg American Corn Fried Rice</span><span>₹180</span></li>
+        <li><span>Veg American Chopsuey</span><span>₹190</span></li>
+      </ul>
+    </section>
+
+    <!-- Non-Veg Rice/Noodles -->
+    <section class="menu-category">
+      <h2>🍖 Non-Veg Rice & Noodles</h2>
+      <ul>
+        <li><span>Chicken Hakka Noodle</span><span>₹210</span></li>
+        <li><span>Chicken Schezwan Noodle</span><span>₹220</span></li>
+        <li><span>Chicken Fried Rice</span><span>₹190</span></li>
+        <li><span>Chicken Mix Noodle</span><span>₹220</span></li>
+        <li><span>Chicken Schezwan Fried Rice</span><span>₹220</span></li>
+        <li><span>Egg Fried Rice</span><span>₹170</span></li>
+      </ul>
+    </section>
+
+    <!-- Tandoori Starter -->
+    <section class="menu-category">
+      <h2>🔥 Tandoori Starters</h2>
+      <ul>
+        <li><span>Paneer Tikka</span><span>₹270</span></li>
+        <li><span>Paneer Malai Tikka</span><span>₹290</span></li>
+        <li><span>Paneer Achari Tikka</span><span>₹290</span></li>
+        <li><span>Paneer Pahadi Kebab</span><span>₹300</span></li>
+        <li><span>Paneer Pudina Kebab</span><span>₹200</span></li>
+        <li><span>Paneer Angara Kebab</span><span>₹300</span></li>
+        <li><span>Paneer Banjara Kebab</span><span>₹300</span></li>
+        <li><span>Paneer Hariyali Kebab</span><span>₹300</span></li>
+        <li><span>Paneer Reshmi Kebab</span><span>₹320</span></li>
+        <li><span>Paneer Sholey Kebab</span><span>₹310</span></li>
+        <li><span>Paneer Hill-Top</span><span>₹310</span></li>
+        <li><span>Paneer Makhmali Roll</span><span>₹330</span></li>
+        <li><span>Kaju Katli Kebab</span><span>₹310</span></li>
+        <li><span>Malai Seekh Kebab</span><span>₹300</span></li>
+        <li><span>Cheese Moti Dana Kebab</span><span>₹300</span></li>
+        <li><span>Peanut Coriander Kebab</span><span>₹320</span></li>
+        <li><span>Tandoori Bharwa Aaloo</span><span>₹280</span></li>
+        <li><span>Tandoori Babycorn</span><span>₹280</span></li>
+        <li><span>Tandoori Veg Platter (16 pcs)</span><span>₹600</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 AJJ Restaurant | Designed with ❤️</p>
+  </footer>
 </body>
 </html>
